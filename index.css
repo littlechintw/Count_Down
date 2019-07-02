@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  padding: 120px 0;
+	background-color: rgb(20, 20, 20);
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#FFFFFF;
+}
+
+
+p {
+  font-size: 36px;
+  font-size: 5.4vw;  
+}
+
+.timetext {
+  font-size: 36px; 
+  font-size: 5.4vw;  
+  font-size:1000%;
+}
+
+.detailtext {
+  font-size: 36px;
+  font-size: 5.4vw;  
+  font-size:165%;
+  color:gray;
+}
