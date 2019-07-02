@@ -6,8 +6,8 @@ function getRTime(){
     newsids=newsidinfo.split("=");
 	newsid=newsids[1];
 	timeset=newsid.replace("%20", " ")
-	timeset=newsid.replace("%2F", "/")
-	timeset=newsid.replace("%3A", ":")
+	timeset=timeset.replace("%2F", "/")
+	timeset=timeset.replace("%3A", ":")
 	var EndTime= new Date(timeset);
 	
 	document.getElementById("text").innerHTML = '倒數至 ' + String(EndTime);
