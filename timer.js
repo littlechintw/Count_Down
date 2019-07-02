@@ -4,8 +4,11 @@ function getRTime(){
     offset=urlinfo.indexOf("?");
     newsidinfo=urlinfo.substr(offset,len)
     newsids=newsidinfo.split("=");
-    newsid=newsids[1];
-	var EndTime= new Date(newsid.replace("%20", " "));
+	newsid=newsids[1];
+	timeset=newsid.replace("%20", " ")
+	timeset=newsid.replace("%2F", "/")
+	timeset=newsid.replace("%3A", ":")
+	var EndTime= new Date(timeset);
 	
 	document.getElementById("text").innerHTML = '倒數至 ' + String(EndTime);
 	var NowTime = new Date();
